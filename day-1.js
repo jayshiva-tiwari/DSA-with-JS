@@ -1,3 +1,5 @@
+// Day 1: What is DSA + Why it Matters + Big-O notation with programming paglu 🎀
+
 // Big-O notation is a way to measure the efficiency of an algorithm.
 // It describes the upper limit of the time or space complexity of an algorithm in relation to the input size.
 
