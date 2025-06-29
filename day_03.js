@@ -58,3 +58,4 @@ const data = ["a", "b", "c"];
 data.forEach((item, index) => {
     console.log(`${item} is at index ${index}`);
 });
+
