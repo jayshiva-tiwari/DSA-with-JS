@@ -28,54 +28,12 @@ class LinkedList {
 }
 
 // Insert at Head
-insertAtHead(value) {
-    const newNode = new Node(value);
-    newNode.next = this.head;
-    this.head = newNode;
-}
-
 
 // Insert at Tail
-insertAtTail(value) {
-    const newNode = new Node(value);
-
-    if (!this.head) {
-        this.head = newNode;
-        return;
-    }
-
-    let current = this.head;
-    while (current.next) {
-        current = current.next;
-    }
-
-    current.next = newNode;
-}
-
 
 //  Delete a Node by Value
-deleteValue(value) {
-    if (!this.head) return;
-
-    if (this.head.value === value) {
-        this.head = this.head.next;
-        return;
-    }
-
-    let current = this.head;
-    while (current.next && current.next.value !== value) {
-        current = current.next;
-    }
-
-    if (current.next) {
-        current.next = current.next.next;
-    }
-}
-
 
 // Print All Nodes
-
-
 class Node {
     constructor(value) {
         this.value = value;
