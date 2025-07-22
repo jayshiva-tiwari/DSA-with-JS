@@ -45,3 +45,4 @@ function partition(arr, left, right) {
 
 // Try it out!
 console.log(quickSort([10, 7, 8, 9, 1, 5]));  // Output: [1, 5, 7, 8, 9, 10]
+
