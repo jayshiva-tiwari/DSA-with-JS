@@ -4,6 +4,8 @@
 // Traversal means visiting every node in a tree exactly once, in a specific order.
 // In DFS traversal, we go deep into a subtree before backtracking.
 
+// Depth-First Search
+
 // | Traversal     | Order               | Use Case Example                       |
 // | ------------- | ------------------- | -------------------------------------- |
 // | **Inorder**   | Left → Root → Right | BST (gives sorted order)               |
