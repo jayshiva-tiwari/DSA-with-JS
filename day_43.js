@@ -22,10 +22,10 @@
 
 // Graph: 0 → [1, 2], 1 → [2], 2 → [0, 3], 3 → [3]
 const adjList = {
-  0: [1, 2],
-  1: [2],
-  2: [0, 3],
-  3: [3],
+    0: [1, 2],
+    1: [2],
+    2: [0, 3],
+    3: [3],
 };
 
 
@@ -34,10 +34,10 @@ const adjList = {
 
 // Graph with 4 nodes
 const adjMatrix = [
-  [0, 1, 1, 0], // Node 0 → 1, 2
-  [0, 0, 1, 0], // Node 1 → 2
-  [1, 0, 0, 1], // Node 2 → 0, 3
-  [0, 0, 0, 1], // Node 3 → 3
+    [0, 1, 1, 0], // Node 0 → 1, 2
+    [0, 0, 1, 0], // Node 1 → 2
+    [1, 0, 0, 1], // Node 2 → 0, 3
+    [0, 0, 0, 1], // Node 3 → 3
 ];
 
 
@@ -53,24 +53,24 @@ const adjMatrix = [
 
 
 class Graph {
-  constructor() {
-    this.adjList = {};
-  }
-
-  addVertex(vertex) {
-    if (!this.adjList[vertex]) this.adjList[vertex] = [];
-  }
-
-  addEdge(v1, v2) {
-    this.adjList[v1].push(v2); // directed
-    // this.adjList[v2].push(v1); // uncomment for undirected
-  }
-
-  printGraph() {
-    for (let vertex in this.adjList) {
-      console.log(`${vertex} → ${this.adjList[vertex].join(', ')}`);
+    constructor() {
+        this.adjList = {};
     }
-  }
+
+    addVertex(vertex) {
+        if (!this.adjList[vertex]) this.adjList[vertex] = [];
+    }
+
+    addEdge(v1, v2) {
+        this.adjList[v1].push(v2); // directed
+        // this.adjList[v2].push(v1); // uncomment for undirected
+    }
+
+    printGraph() {
+        for (let vertex in this.adjList) {
+            console.log(`${vertex} → ${this.adjList[vertex].join(', ')}`);
+        }
+    }
 }
 
 const g = new Graph();
